@@ -1,0 +1,13 @@
+{{!-- spacer --}}
+
+<div class="row boxes d-flex flex-row-reverse">
+<li>
+	{{name}}
+	
+	<button class="change-status text-success" data-completed="{{completed}}" data-id="{{id}}">
+		{{#if completed}}&#10003{{else}}ADD{{/if}}
+	</button>
+
+	<button class="delete-task" data-id="{{id}}">X</button>
+</li>
+</div>

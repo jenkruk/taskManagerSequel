@@ -1,0 +1,56 @@
+{{!-- Header space for easier readability --}}
+
+
+<div class="container shadow-lg">
+
+<div class="row d-flex justify-content-center">
+<h1 class="title col-sm-6 pt-5 pb-3 mb-4 w-75 border-bottom border-secondary">Task Manager</h1>
+</div>
+
+<!-- row enclosing all three columns -->
+<div class="row col-sm-12 d-flex justify-content-center"> 
+
+  <div class="row to-do col-sm-4">
+  <h2 class="heading border-bottom border-secondary mt-5">To-Do</h2>
+
+    <div class="col-sm mt-2 tasks">
+    <ol>
+      {{#each tasks}}
+        {{#unless completed}}
+          {{> tasks/task-block completed=true}}
+        {{/unless}}
+      {{/each}}
+    </ol>
+    </div>
+  </div> <!-- end to-do column -->
+
+  <div class="row add col-sm-3 d-inline-block mx-3">
+
+    <form class="create-form" action="/" method="POST">
+
+      <div class="form-group">
+        <label for="task" class="font-weight-bold text-justify pt-1 pb-2 text-uppercase pt-3mt-5"><h5>Add a new task:</h5></label>
+        <input type="text" id="task" name="newTask">
+      </div>
+
+      <button type="submit">Add Task</button>
+    </form>
+  </div> <!-- end add-a-task column -->
+
+  <div class="row done col-sm-4">
+  <h2 class="heading border-bottom border-secondary mt-5">Done</h2>
+
+  <div class="row col-sm done mt-2">
+  <ol>
+    {{#each tasks}}
+      {{#if completed}}
+        {{> tasks/task-block completed=false}}
+      {{/if}}
+    {{/each}}
+  </ol>
+  </div>
+  </div> <!-- end done column -->
+
+
+</div> <!-- end row -->
+</div> <!-- end container -->
