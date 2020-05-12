@@ -1,26 +1,29 @@
 {
-  "name": "taskManager",
+  "name": "taskmanagersequel",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/jenkruk/taskManager.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/jenkruk/taskManager/issues"
-  },
-  "homepage": "https://github.com/jenkruk/taskManager#readme",
   "dependencies": {
     "express": "^4.17.1",
     "express-handlebars": "^4.0.4",
     "mysql": "^2.18.1",
-    "nodemon": "^2.0.3"
-  }
+    "mysql2": "^2.1.0",
+    "nodemon": "^2.0.3",
+    "sequelize": "^5.21.8"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jenkruk/taskManagerSequel.git"
+  },
+  "author": "Jen Kruk",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jenkruk/taskManagerSequel/issues"
+  },
+  "homepage": "https://github.com/jenkruk/taskManagerSequel#readme"
 }
