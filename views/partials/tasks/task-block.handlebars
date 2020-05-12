@@ -1,13 +1,15 @@
 {{!-- spacer --}}
 
-<div class="row boxes d-flex flex-row-reverse">
-<li>
-	{{name}}
-	
-	<button class="change-status text-success" data-completed="{{completed}}" data-id="{{id}}">
-		{{#if completed}}&#10003{{else}}ADD{{/if}}
-	</button>
+<li>	
+	<div class="d-flex flex-grow flex-row justify-content-between">
+		{{name}}
 
-	<button class="delete-task" data-id="{{id}}">X</button>
+		<div class="mb-2 d-flex justify-content-end flex-shrink">
+			<button class="change-status text-success" data-completed="{{completed}}" data-id="{{id}}">
+				{{#if completed}}ADD{{else}}&#10003{{/if}}
+			</button>
+			<button class="delete-task" data-id="{{id}}">X</button>
+		</div>
+	</div>
 </li>
-</div>
+

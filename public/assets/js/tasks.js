@@ -1,9 +1,12 @@
+//Header space for easier readability
+
 // Make sure we wait to attach our handlers until the DOM is fully loaded.
 $(function() {
   //Move to-do to done and vice versa
     $(".change-status").on("click", function(event) {
       var id = $(this).data("id");
       var newStatus = $(this).data("completed");
+      newStatus = (newStatus==0) ? 1 : 0;
       console.log(newStatus);
       var newStatusState = {
         completed: newStatus

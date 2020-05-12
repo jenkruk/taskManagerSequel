@@ -1,7 +1,7 @@
 -- Header space for easier readability
 
 -- Write SQL queries in this file that do the following:
-DROP DATABASE IF EXISTS taskManagerSequel_db;
+-- DROP DATABASE IF EXISTS taskManagerSequel_db;
 -- Create the taskManager_db.
 CREATE DATABASE taskManagerSequel_db;
 -- Switch to or use the taskManager_db.

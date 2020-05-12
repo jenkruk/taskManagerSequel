@@ -6,42 +6,20 @@
 
 .container {
   padding-top: 5vh;
-  background-image: url(../images/farmer_@2x.png);
+  /* background-image: url(../images/farmer_@2x.png);
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center; */
   background-color: whitesmoke;
   background-size: 100%; 
   height: 100vh;
-  background-color: rgb(158, 172, 186);
+  background-color: rgb(182, 190, 197);
 }
 
 /* Task Manager Heading  */
 .title {
   margin: 2vh 0 2vh 0;
   text-align: center;
-  color: rgb(48, 47, 47);
-}
-
-/* To-Do and Done headings  */
-.heading {
-  width: 90%;
-  text-align: center;
-  padding-top: 1vh;
-  padding-bottom: 1vh;
-  margin: 0 auto;
-  color: rgb(48, 47, 47);
-}
-
-/* To-Do and Done Columns  */
-
-.tasks ol {
-  margin-right: 3.5rem;
-}
-
-.done ol {
-  /* display: flex; */
-  margin-left: 3.5rem;
-  color: lightslategray;
+  color: rgb(63, 63, 63);
 }
 
 /* add task column  */
@@ -49,22 +27,70 @@
   text-align: center;
 }
 
+/* Input Field Label  */
+label {
+  color: rgb(63, 63, 63);
+}
+
+/* Add Task Button  */
+.submit {
+  color: rgb(63, 63, 63);
+}
+
+/* To-Do and Done headings  */
+.heading {
+  width: 70%;
+  text-align: center;
+  padding-top: 1vh;
+  padding-bottom: 1vh;
+  margin: 0 auto;
+  color: rgb(63, 63, 63);
+}
+
+/* To-Do and Done Columns  */
+.tasks,
+.done {
+    padding-top: 1vh;
+}
+
+ol {
+  width: 70%;
+  display: inline-block;
+  margin: 0 auto;
+}
+
+.tasks {
+  color: rgb(63, 63, 63);
+}
+
+.done {
+  color: lightslategray;
+}
+
 /* delete buttons  */
 .delete-task {
-  position: static;
   font-weight: bold;
   color: darkred;
 }
  
-/* check marks and add buttons  */
-.change-status {
-  margin-left: 1vw;
-}
-
 /* all buttons  */
 button {
   background-color: white;
   border-color: rgb(119, 150, 168);
 }
 
- 
+@media (min-width: 300px) and (max-width: 992px) {
+  ol {
+    width: 90%;
+  }
+
+  .title {
+    margin: .25rem;
+    width: 100%;
+  }
+
+  .container {
+    padding-top: .5rem;
+  }
+
+}
