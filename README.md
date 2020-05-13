@@ -2,17 +2,8 @@
 
 Keep your life on track with this easy to use To Do list!
 
-## Add a New Task
-![list](./public/assets/images/start.jpg)
-
-## Click on the checkmark when your task has been completed
-![start](./public/assets/images/newTask.jpg)
-
-## Your task now shows up in your done list (So satisfying!)
-![check](./public/assets/images/newDone.jpg)
-
-## Click on the red X to delete any tasks you no longer want on your lists
-![your-new-friend](./public/assets/images/delete.jpg)
+## Demo
+![list](./public/assets/images/taskMgr.gif)
 
 ## Built With
 * [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
@@ -25,7 +16,7 @@ Keep your life on track with this easy to use To Do list!
 * [Handlebars](https://handlebarsjs.com/guide/#what-is-handlebars)
 
 ## Deployed Link
-* [See Live Site]()
+* [See Live Site](https://quiet-bayou-82536.herokuapp.com/)
 
 ## Author
 * *Jennifer Kruk*
