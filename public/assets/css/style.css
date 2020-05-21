@@ -7,15 +7,17 @@
 .container {
   padding-top: 5vh;
   background-color: white;
-  background-size: 100%; 
-  height: 100vh;
+  height: 120vh;
   border: 1px solid lightcyan;
+}
+
+.date {
+  padding-top: 5vh;
 }
 
 /* Task Manager Heading  */
 .title {
-  margin: 2vh 0 2vh 0;
-  color: rgb(63, 63, 63);
+  margin: 0 0 2vh 0;
 }
 
 /* add task column  */
@@ -23,29 +25,51 @@
   text-align: center;
 }
 
+h5 {
+  color: #FB6AAE;
+}
+
 /* Add Task Button  */
 .submit {
-  background-color: #FFE571;
-}
+  /* special affect source: https://codepen.io/gcyrillo/pen/bMggoY */
+  position: static;
+  text-align: center;
+  font-size: 1rem;
+  font-family: 'Playfair Display', serif;
+  color: orange;
+  width: 100px;
+  height: 30px;
+  border-radius: 1px;
+  text-shadow: 
+    0px 2px grey, 
+    0px 2px 2px rgba(36, 35, 35, 0.2)3;
+  box-shadow: 
+    0px 0px 0px 5px orange,
+    0px 5px 0px 5px orange,
+    10px 15px 8px #aaaaaa;
+  cursor: pointer;
+  border-radius: 10px 3px 10px 3px;
+  }
 
-.submit:hover {
-  color: blue;
-  font-size: 105%;
-  border-style: inset;
-}
-
+  .submit p {
+    transform: rotate(-3deg);
+  }
+  
+  .submit:hover {
+    animation: .8s morph ease infinite;
+  }
+  
+  .submit:hover p {
+    animation: .8s rot ease infinite;
+  }
 
 /* To-Do and Done Columns  */
+
 .tasks,
 .done {
-    padding-top: 1vh;
+    padding-top: 2vh;
 }
 
-.change-status {
-  color: white;
-  background-color: #b0c925;
-  margin-right: 0.5vw;
-}
 ol {
   width: 70%;
   display: inline-block;
@@ -53,11 +77,11 @@ ol {
 }
 
 .to-doCol {
-  color: orange;
+  color: #a052df;
 }
 
 .doneCol {
-  color: #a052df;
+  color: #51D0DF;
 }
 
 .tasks {
@@ -68,13 +92,97 @@ ol {
   color: lightgray;
 }
 
+.check {
+    position: static;
+    text-align: center;
+    margin-right: 1.25vw;
+    margin-bottom: 1.5vh;
+    font-size: 1rem;
+    font-family: 'Playfair Display', serif;
+    color: #B0C90A;
+    width: 30px;
+    height: 20px;
+    border-radius: 1px;
+    text-shadow: 
+      0px 2px grey, 
+      0px 2px 2px rgba(36, 35, 35, 0.2)3;
+    box-shadow: 
+      0px 0px 0px 5px #b0c90a,
+      0px 5px 0px 5px #b0c90a,
+      10px 15px 8px #aaaaaa;
+    cursor: pointer;
+    border-radius: 10px 3px 10px 3px;
+
+  }
+
+  .check p {
+    margin-top: -5px;
+    transform: rotate(-3deg);
+    font-weight: bolder;
+  }
+  
+  .check:hover {
+    animation: .8s morph ease infinite;
+  }
+  
+  .check:hover p {
+    animation: .8s rot ease infinite;
+  }
+
 /* delete buttons  */
 .delete-task {
-  font-weight: bold;
-  color: white;
-  background-color: #fa69ac;
+  font-weight: bolder;
+  position: static;
+  text-align: center;
+  font-size: .75rem;
+  font-family: 'Playfair Display', serif;
+  color: #FA69AC;
+  width: 30px;
+  height: 20px;
+  margin-bottom: 1.5vh;
+  border-radius: 1px;
+  text-shadow: 
+    0px 2px grey, 
+    0px 2px 2px rgba(36, 35, 35, 0.2)3;
+  box-shadow: 
+    0px 0px 0px 5px #FA69AC,
+    0px 5px 0px 5px #FA69AC,
+    10px 15px 8px #aaaaaa;
+  cursor: pointer;
+  border-radius: 10px 3px 10px 3px;
+}
 
+.delete p {
+  margin-top: -2px;
+  transform: rotate(-3deg);
+}
 
+.delete:hover {
+  animation: .8s morph ease infinite;
+}
+
+.delete:hover p {
+  animation: .8s rot ease infinite;
+}
+
+@keyframes morph {
+  0% {
+    border-radius: 10px 3px 5px 3px;
+  } 50% {
+    border-radius: 3px 10px 3px 10px;
+  } 100% {
+    border-radius: 10px 3px 5px 3px;
+  }
+}
+
+@keyframes rot {
+  0% {
+    transform: rotate(-3deg);
+  } 50% {
+    transform: rotate(3deg);
+  } 100% {
+    transform: rotate(-3deg);
+  }
 }
 
 @media (min-width: 300px) and (max-width: 992px) {

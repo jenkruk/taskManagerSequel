@@ -9,7 +9,7 @@ $(function() {
   (function()
   {
     // instantiate moment
-    var dateTime = moment().format('dddd, MMMM Do YY h:mm a');
+    var dateTime = moment().format('dddd, MMMM Do YYYY h:mm a');
      
     $(".date").append(dateTime);
   }) ();

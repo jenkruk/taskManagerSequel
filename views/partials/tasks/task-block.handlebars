@@ -5,10 +5,10 @@
 		{{name}}
 
 		<div class="mb-2 d-flex justify-content-end flex-shrink">
-			<button class="change-status" data-completed="{{completed}}" data-id="{{id}}">
-				{{#if completed}}ADD{{else}}&#10003{{/if}}
+			<button class="change-status check" data-completed="{{completed}}" data-id="{{id}}">
+			<p>{{#if completed}}+{{else}}&#10003{{/if}} </p>
 			</button>
-			<button class="delete-task" data-id="{{id}}">X</button>
+			<button class="delete-task delete" data-id="{{id}}"><p>X</p></button>
 		</div>
 	</div>
 </li>
