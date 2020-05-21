@@ -34,15 +34,6 @@
   border-style: inset;
 }
 
-/* To-Do and Done headings  */
-.heading {
-  width: 70%;
-  text-align: center;
-  padding-top: 1vh;
-  padding-bottom: 1vh;
-  margin: 0 auto;
-  color: rgb(63, 63, 63);
-}
 
 /* To-Do and Done Columns  */
 .tasks,
@@ -62,7 +53,7 @@ ol {
 }
 
 .to-doCol {
-  color: #df7a52;
+  color: orange;
 }
 
 .doneCol {
