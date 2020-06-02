@@ -3,7 +3,7 @@
 Keep your life on track with this easy to use To Do list!
 
 ## Demo
-![list](./public/assets/images/taskMgr.gif)
+![list](/public/assets/images/taskMgr.gif)
 
 ## Built With
 * [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
