@@ -1,4 +1,4 @@
-# taskManagerSequel
+## taskManagerSequel
 
 Keep your life on track with this easy to use To Do list!
 
