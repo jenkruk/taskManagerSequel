@@ -5,7 +5,7 @@
   "main": "server.js",
   "dependencies": {
     "@handlebars/allow-prototype-access": "^1.0.3",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "express-handlebars": "^5.3.1",
     "mysql": "^2.18.1",
     "mysql2": "^2.1.0",
